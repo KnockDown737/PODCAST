@@ -1,0 +1,254 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Remove barra de rolagem horizontal */
+}
+
+.nav {
+  background-color: #1a1a1a;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4CAF50;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #4CAF50;
+}
+
+.landing-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ultrawide-image.jpg') center/cover no-repeat;
+}
+
+.landing-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  max-width: 80%;
+}
+
+.header-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5rem 3rem;
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.header-content img {
+  width: 35%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-text {
+  width: 50%;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.header-text p {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 700px;
+}
+
+.sobre {
+  padding: 5rem 3rem;
+  text-align: center;
+  background-color: #f8f8f8;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.sobre-text {
+  width: 50%;
+}
+
+.sobre img {
+  width: 35%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.sobre p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.destaques {
+  padding: 4rem 3rem;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.destaques h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.destaques-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destaque-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destaque-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 4px solid #4CAF50;
+}
+
+.destaque-item h3 {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.destaque-item p {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.destaque-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.inscreva-se {
+  padding: 4rem 2rem;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.inscreva-se h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.inscreva-se p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.botao-inscreva-se {
+  background-color: #fff;
+  color: #4CAF50;
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-inscreva-se:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid #4CAF50;
+  box-sizing: border-box;
+}

@@ -1,0 +1,127 @@
+/* episodios.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  background-color: #1a1a1a;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4CAF50;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+
+.nav-item a:hover {
+  color: #4CAF50;
+}
+
+.episodios-header {
+  background: linear-gradient(rgba(141, 141, 141, 0.6), rgba(0, 0, 0, 0.6)), url('../images/redes.jpg') center/cover no-repeat;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.episodios-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.episodio {
+  color: #000;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #fff;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.episodio-alt {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.episodio-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.episodio-audio {
+  width: 50%;
+  margin-right: 10rem;
+}
+
+.episodio-texto {
+  width: 50%;
+  text-align: left;
+}
+
+.episodio-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.episodio-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.episodio:nth-child(even) .episodio-texto {
+  color: #fff;
+}
+
+.episodio:nth-child(odd) .episodio-texto {
+  color: #000;
+}
+
+audio {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid #4CAF50;
+  box-sizing: border-box;
+}

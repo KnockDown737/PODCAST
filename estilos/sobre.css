@@ -1,0 +1,90 @@
+/* sobre.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  background-color: #1a1a1a;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #4CAF50;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #4CAF50;
+}
+
+
+.sobre-logo {
+  background-color: #000000;
+  padding: 3rem;
+  text-align: center;
+
+}
+
+.sobre-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.sobre-content {
+  padding: 5rem 3rem;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-text {
+  text-align: left;
+}
+
+.sobre-text h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.sobre-text p {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid #4CAF50;
+  box-sizing: border-box;
+}
