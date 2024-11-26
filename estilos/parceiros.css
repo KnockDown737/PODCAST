@@ -18,7 +18,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #4CAF50;
   display: flex;
-
 }
 
 .nav-list {
@@ -44,8 +43,6 @@ body {
 .nav-item a:hover {
   color: #4CAF50;
 }
-
-
 
 .parceiros-content {
   padding: 5rem 3rem;
@@ -89,12 +86,19 @@ body {
   color: #333;
 }
 
+/* Link styles */
 .parceiro-item a {
   padding: 0 1.5rem 1.5rem 1.5rem;
   font-size: 1rem;
   color: #4CAF50;
   text-decoration: none;
   display: block;
+}
+
+
+.parceiro-item a:visited {
+  color: #4CAF50; /* Define a mesma cor para links padrão e visitados */
+  text-decoration: none; /* Remove sublinhado */
 }
 
 .parceiro-item a:hover {
